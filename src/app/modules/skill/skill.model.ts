@@ -4,6 +4,9 @@ import { ISkill } from "./skill.interface";
 const SkillSchema = new Schema({
   skillName: { type: String},
   skillImage: { type: String},
+},
+{
+  timestamps: true,
 });
 
 const Skill = model<ISkill>("Skill", SkillSchema);
